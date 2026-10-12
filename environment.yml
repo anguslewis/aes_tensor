@@ -1,0 +1,17 @@
+# Quick-start environment for aes_tensor, pinned to the versions it is
+# developed and tested with. Depending on your device, the PyTorch build this
+# installs may not use available GPUs; to run on GPUs, see README.md,
+# Installation.
+#
+#   conda env create -f environment.yml
+#   conda activate aes_tensor_quick
+#   pip install .
+name: aes_tensor_quick
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip=25.0.1
+  - numpy=1.26.4
+  - pytorch=2.6.0
+  - pytest=8.3.5

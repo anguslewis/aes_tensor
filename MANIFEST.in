@@ -1,0 +1,4 @@
+include environment.yml
+recursive-include tests *.py
+recursive-include examples *.py
+global-exclude __pycache__ *.py[cod]

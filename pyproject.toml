@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aes_tensor"
+version = "0.1.0"
+description = "Batched PyTorch solver for combinatorial discrete choice problems (Arkolakis-Eckert-Shi squeezing and branching)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["torch"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
